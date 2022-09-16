@@ -53,7 +53,7 @@ class _TodoListPageState extends State<TodoListPage> {
                         todoController.clear();
                       },
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xff00d7f3),
+                        primary: const Color(0xff00d7f3),
                         padding: const EdgeInsets.symmetric(
                           horizontal: 20,
                           vertical: 5,
@@ -96,7 +96,7 @@ class _TodoListPageState extends State<TodoListPage> {
                     ElevatedButton(
                       onPressed: deleteTodosConfirmation,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xff00d7f3),
+                        primary: const Color(0xff00d7f3),
                         padding: const EdgeInsets.all(14),
                       ),
                       child: const Text('Limpar tudo'),
@@ -153,7 +153,7 @@ class _TodoListPageState extends State<TodoListPage> {
               Navigator.of(context).pop();
             },
             style: TextButton.styleFrom(
-              foregroundColor: Colors.blue,
+              backgroundColor: Colors.blue,
             ),
             child: const Text('Cancelar'),
           ),
@@ -163,7 +163,7 @@ class _TodoListPageState extends State<TodoListPage> {
               deleteAllTodos();
             },
             style: TextButton.styleFrom(
-              foregroundColor: Colors.red,
+              backgroundColor: Colors.red,
             ),
             child: const Text('Limpar tudo'),
           ),

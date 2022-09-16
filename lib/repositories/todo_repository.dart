@@ -1,4 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:todo_list/models/todo.dart';
 
 class TodoRepository {
   TodoRepository() {
@@ -7,7 +8,5 @@ class TodoRepository {
 
   late SharedPreferences sharedPreferences;
 
-  void exemplo() {
-    sharedPreferences.setString('nome', 'Bya');
-  }
+  void saveTodoList(List<Todo> todos) {}
 }
