@@ -1,0 +1,4 @@
+{
+    "dart.evaluateGettersInDebugViews": true,
+    "dart.evaluateToStringInDebugViews": true
+}
